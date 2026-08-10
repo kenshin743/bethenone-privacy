@@ -8,8 +8,10 @@
   déclare le questionnaire « Confidentialité de l'app », et ce que fait l'app.
 
   Deux points qui rendraient cette page fausse s'ils changeaient :
-    · la publicité est coupée dans cette version (Ads.enabled = false). Le jour où
-      elle est rallumée, il faut décrire AdMob, le consentement et le suivi ;
+    · la publicité est active (Ads.enabled = true, Interstitial.swift). Si elle est
+      recoupée, la section « Publicité » doit être réécrite au lieu d'être laissée
+      telle quelle — décrire un traitement qui n'a pas lieu est aussi faux que
+      l'inverse ;
     · aucune mesure d'audience n'est embarquée. Si un jour il y en a une, elle se
       déclare ici.
 -->
@@ -90,9 +92,10 @@
   que vous choisissez, et vos scores. Rien d'autre.
 </p>
 <p>
-  Il n'y a ni compte, ni mot de passe, ni adresse e-mail. Aucune mesure d'audience,
-  aucun traceur, et aucune publicité dans cette version. Rien n'est vendu ni
-  transmis à un tiers à des fins commerciales.
+  Il n'y a ni compte, ni mot de passe, ni adresse e-mail, et aucune mesure
+  d'audience. Le jeu affiche en revanche des publicités, fournies par Google AdMob,
+  qui collectent leurs propres données — c'est décrit plus bas. Votre pseudo, votre
+  pays et vos scores ne leur sont jamais transmis, et ne sont vendus à personne.
 </p>
 
 <h2>Qui traite ces données</h2>
@@ -141,10 +144,27 @@
 
 <h2>Publicité</h2>
 <p>
-  <strong>Cette version n'affiche aucune publicité</strong> et n'effectue aucun
-  suivi publicitaire. Si de la publicité est introduite dans une version future,
-  cette page sera mise à jour avant sa mise en ligne, et votre consentement vous
-  sera demandé au préalable comme l'exige la réglementation européenne.
+  Le jeu affiche une publicité plein écran toutes les deux minutes de jeu cumulées.
+  <strong>Jamais au milieu d'une partie</strong> : uniquement une fois la course
+  terminée, ou entre deux niveaux.
+</p>
+<p>
+  Elles sont fournies par <strong>Google AdMob</strong>. Avant la première, un
+  formulaire de consentement s'affiche, comme l'exige la réglementation européenne :
+  vous choisissez si vos données peuvent servir à personnaliser les annonces. iOS
+  vous demande séparément l'autorisation de suivi. Refuser l'un ou l'autre ne change
+  rien au jeu — les publicités restent, simplement non personnalisées.
+</p>
+<p>
+  Selon ce que vous autorisez, AdMob peut recueillir l'identifiant publicitaire de
+  l'appareil, son adresse IP, son modèle et la façon dont vous interagissez avec
+  l'annonce. Ces données vont à Google, pas à moi : je ne les reçois ni ne les
+  conserve. Détail dans les
+  <a href="https://policies.google.com/technologies/ads">règles de Google relatives
+  à la publicité</a>.
+</p>
+<p>
+  L'achat <strong>Sans publicité</strong> les supprime définitivement.
 </p>
 
 <h2>Enfants</h2>
@@ -195,9 +215,9 @@
   and your scores. Nothing else.
 </p>
 <p>
-  There is no account, no password, no email address. No analytics, no trackers, and
-  no advertising in this version. Nothing is sold or passed to a third party for
-  commercial purposes.
+  There is no account, no password, no email address, and no analytics. The game does
+  show ads, served by Google AdMob, which collect their own data — described below.
+  Your nickname, country and scores are never passed to them, and are sold to no one.
 </p>
 
 <h2>Who processes this data</h2>
@@ -244,10 +264,25 @@
 
 <h2>Advertising</h2>
 <p>
-  <strong>This version shows no advertising</strong> and performs no ad tracking. If
-  advertising is introduced in a future version, this page will be updated before
-  that version ships, and your consent will be requested beforehand as European
-  regulation requires.
+  The game shows a full-screen ad every two minutes of cumulative play.
+  <strong>Never in the middle of a run</strong>: only once the run has ended, or
+  between levels.
+</p>
+<p>
+  They are served by <strong>Google AdMob</strong>. Before the first one, a consent
+  form appears, as European regulation requires: you choose whether your data may be
+  used to personalise ads. iOS asks separately for tracking permission. Declining
+  either changes nothing about the game — the ads stay, simply not personalised.
+</p>
+<p>
+  Depending on what you allow, AdMob may collect the device advertising identifier,
+  its IP address, its model and how you interact with the ad. That data goes to
+  Google, not to me: I neither receive nor keep it. Details in
+  <a href="https://policies.google.com/technologies/ads">Google's advertising
+  policies</a>.
+</p>
+<p>
+  The <strong>Remove ads</strong> purchase removes them permanently.
 </p>
 
 <h2>Children</h2>
