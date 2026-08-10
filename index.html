@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--
+  Politique de confidentialité de Be the One, bilingue français / anglais dans une
+  seule page. Une seule URL à fournir à App Store Connect, valable pour les deux
+  langues de la fiche.
+
+  À tenir à jour avec le binaire : Apple compare ce que la page annonce, ce que
+  déclare le questionnaire « Confidentialité de l'app », et ce que fait l'app.
+
+  Deux points qui rendraient cette page fausse s'ils changeaient :
+    · la publicité est coupée dans cette version (Ads.enabled = false). Le jour où
+      elle est rallumée, il faut décrire AdMob, le consentement et le suivi ;
+    · aucune mesure d'audience n'est embarquée. Si un jour il y en a une, elle se
+      déclare ici.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Be the One — Politique de confidentialité / Privacy Policy</title>
+<style>
+  :root {
+    --field: #080B16;
+    --edge: #1C2440;
+    --bone: #E8EAF0;
+    --dim: #8A93B0;
+    --accent: #2BE0B0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--field);
+    color: var(--bone);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 {
+    font-family: "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+  }
+  .label {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  h2 {
+    font-family: "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    margin: 44px 0 10px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h3 { font-size: 16px; margin: 26px 0 6px; }
+  p, li { color: #C8CEE0; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--edge); margin: 64px 0 0; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px;
+    color: var(--bone);
+    background: var(--edge);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  .nav { margin: 22px 0 0; font-size: 14px; }
+  .date { margin-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+
+<p class="label">Be the One</p>
+<h1>Politique de confidentialité</h1>
+<p class="label date">Dernière mise à jour : 10 août 2026</p>
+<p class="nav"><a href="#english">Read this page in English</a></p>
+
+<h2>En bref</h2>
+<p>
+  Be the One est un jeu de score. Pour qu'un classement mondial existe, trois
+  informations sortent de votre appareil : le pseudo que vous choisissez, le pays
+  que vous choisissez, et vos scores. Rien d'autre.
+</p>
+<p>
+  Il n'y a ni compte, ni mot de passe, ni adresse e-mail. Aucune mesure d'audience,
+  aucun traceur, et aucune publicité dans cette version. Rien n'est vendu ni
+  transmis à un tiers à des fins commerciales.
+</p>
+
+<h2>Qui traite ces données</h2>
+<p>
+  L'éditeur de l'application, joignable à
+  <a href="mailto:rouassif74@gmail.com">rouassif74@gmail.com</a>. C'est aussi
+  l'adresse à utiliser pour toute demande relative à vos données.
+</p>
+
+<h2>Ce qui est envoyé au serveur</h2>
+<ul>
+  <li><strong>Le pseudo</strong> que vous saisissez. Il est public : il apparaît
+    dans le classement, visible par les autres joueurs. Ne mettez pas votre nom
+    réel si vous ne le souhaitez pas — vous êtes libre du pseudo choisi.</li>
+  <li><strong>Le pays</strong> que vous sélectionnez dans la liste. Il sert au
+    classement national. Il est déclaré par vous, jamais déduit : l'app ne demande
+    aucun accès à votre position.</li>
+  <li><strong>Vos scores</strong> : le nombre de cibles touchées, le nombre de tirs
+    au centre, la durée de la partie et sa date.</li>
+  <li><strong>Une empreinte d'appareil.</strong> À la première ouverture, l'app
+    tire un identifiant au hasard et le conserve dans le Trousseau iOS. Le serveur
+    n'en reçoit que l'empreinte <code>SHA-256</code>, jamais l'identifiant
+    lui-même. Son seul rôle : empêcher qu'un autre appareil revendique votre
+    pseudo. Il n'est lié à aucun identifiant Apple, ni à aucun autre service, et ne
+    permet pas de vous suivre en dehors du jeu.</li>
+</ul>
+<p>
+  Ces données sont hébergées chez <strong>Supabase</strong>, sur des serveurs situés
+  dans l'Union européenne (région Irlande), qui agit comme sous-traitant.
+</p>
+
+<h2>Ce qui reste sur votre appareil</h2>
+<p>
+  Vos réglages — apparence, musique, son coupé ou non, mode, meilleur score,
+  progression dans les niveaux — sont stockés localement et ne sont pas transmis.
+  L'identifiant d'appareil décrit plus haut reste lui aussi sur l'appareil, dans le
+  Trousseau, sous sa forme complète.
+</p>
+
+<h2>Achats intégrés</h2>
+<p>
+  Les achats passent entièrement par l'App Store. L'application ne voit ni ne
+  conserve aucune donnée de paiement : elle reçoit seulement d'Apple l'information
+  qu'un contenu est débloqué.
+</p>
+
+<h2>Publicité</h2>
+<p>
+  <strong>Cette version n'affiche aucune publicité</strong> et n'effectue aucun
+  suivi publicitaire. Si de la publicité est introduite dans une version future,
+  cette page sera mise à jour avant sa mise en ligne, et votre consentement vous
+  sera demandé au préalable comme l'exige la réglementation européenne.
+</p>
+
+<h2>Enfants</h2>
+<p>
+  Le jeu ne s'adresse pas spécifiquement aux enfants et ne collecte sciemment
+  aucune donnée les concernant. La seule donnée personnelle qu'un joueur peut
+  fournir est un pseudo, librement choisi.
+</p>
+
+<h2>Base légale et durée de conservation</h2>
+<p>
+  Le traitement repose sur l'exécution du service que vous demandez — apparaître au
+  classement (article 6.1.b du RGPD). Les scores et le pseudo sont conservés tant
+  que le classement existe, puisque c'est un classement de tous les temps, ou
+  jusqu'à votre demande de suppression.
+</p>
+
+<h2>Vos droits</h2>
+<p>
+  Vous pouvez demander l'accès à vos données, leur rectification, leur suppression,
+  ou vous opposer à leur traitement. Écrivez à
+  <a href="mailto:rouassif74@gmail.com">rouassif74@gmail.com</a> en indiquant votre
+  pseudo ; la demande est traitée sous 30 jours. La suppression retire
+  définitivement votre pseudo et vos scores du classement.
+</p>
+<p>
+  Vous pouvez également introduire une réclamation auprès de l'autorité de
+  protection des données de votre pays — la CNIL en France.
+</p>
+
+<h2>Modifications</h2>
+<p>
+  Toute modification de cette politique est publiée sur cette page, avec sa date. Un
+  changement de nature du traitement — de la publicité, une mesure d'audience — est
+  annoncé ici avant d'entrer en vigueur.
+</p>
+
+<hr>
+
+<p class="label" id="english">Be the One</p>
+<h1>Privacy Policy</h1>
+<p class="label date">Last updated: 10 August 2026</p>
+
+<h2>In short</h2>
+<p>
+  Be the One is a score game. For a world ranking to exist, three pieces of
+  information leave your device: the nickname you choose, the country you choose,
+  and your scores. Nothing else.
+</p>
+<p>
+  There is no account, no password, no email address. No analytics, no trackers, and
+  no advertising in this version. Nothing is sold or passed to a third party for
+  commercial purposes.
+</p>
+
+<h2>Who processes this data</h2>
+<p>
+  The app's publisher, reachable at
+  <a href="mailto:rouassif74@gmail.com">rouassif74@gmail.com</a>. Use that address
+  for any request concerning your data.
+</p>
+
+<h2>What is sent to the server</h2>
+<ul>
+  <li><strong>The nickname</strong> you enter. It is public: it appears in the
+    leaderboard, visible to other players. Do not use your real name unless you want
+    to — the nickname is entirely your choice.</li>
+  <li><strong>The country</strong> you pick from the list. It powers the national
+    ranking. You declare it; it is never inferred — the app requests no access to
+    your location.</li>
+  <li><strong>Your scores</strong>: targets hit, centre hits, run duration and
+    date.</li>
+  <li><strong>A device fingerprint.</strong> On first launch the app draws a random
+    identifier and keeps it in the iOS Keychain. The server only ever receives its
+    <code>SHA-256</code> hash, never the identifier itself. Its sole purpose is to
+    stop another device from claiming your nickname. It is tied to no Apple
+    identifier and no other service, and cannot be used to track you outside the
+    game.</li>
+</ul>
+<p>
+  This data is hosted by <strong>Supabase</strong> on servers located in the European
+  Union (Ireland region), acting as data processor.
+</p>
+
+<h2>What stays on your device</h2>
+<p>
+  Your settings — skin, music, sound on or off, mode, best score, level progress —
+  are stored locally and never transmitted. The device identifier described above
+  also stays on the device, in the Keychain, in its full form.
+</p>
+
+<h2>In-app purchases</h2>
+<p>
+  Purchases go entirely through the App Store. The app neither sees nor stores any
+  payment data: Apple only tells it that a piece of content is unlocked.
+</p>
+
+<h2>Advertising</h2>
+<p>
+  <strong>This version shows no advertising</strong> and performs no ad tracking. If
+  advertising is introduced in a future version, this page will be updated before
+  that version ships, and your consent will be requested beforehand as European
+  regulation requires.
+</p>
+
+<h2>Children</h2>
+<p>
+  The game is not directed at children and knowingly collects no data about them. The
+  only personal data a player can provide is a freely chosen nickname.
+</p>
+
+<h2>Legal basis and retention</h2>
+<p>
+  Processing rests on performing the service you ask for — appearing in the ranking
+  (GDPR article 6.1.b). Scores and nickname are kept for as long as the leaderboard
+  exists, since it is an all-time ranking, or until you ask for deletion.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  You may request access to your data, its correction or its deletion, or object to
+  its processing. Write to
+  <a href="mailto:rouassif74@gmail.com">rouassif74@gmail.com</a> stating your
+  nickname; requests are handled within 30 days. Deletion permanently removes your
+  nickname and scores from the leaderboard.
+</p>
+<p>
+  You may also lodge a complaint with the data protection authority of your country.
+</p>
+
+<h2>Changes</h2>
+<p>
+  Any change to this policy is published on this page, with its date. A change in the
+  nature of the processing — advertising, analytics — is announced here before it
+  takes effect.
+</p>
+
+</main>
+</body>
+</html>
