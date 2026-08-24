@@ -12,8 +12,12 @@
       recoupée, la section « Publicité » doit être réécrite au lieu d'être laissée
       telle quelle — décrire un traitement qui n'a pas lieu est aussi faux que
       l'inverse ;
-    · aucune mesure d'audience n'est embarquée. Si un jour il y en a une, elle se
-      déclare ici.
+    · la mesure d'audience est embarquée depuis le 12 août 2026 (Tenjin,
+      Store/Attribution.swift). Si elle est retirée, la section « Mesure d'audience
+      et attribution » se retire avec elle ;
+    · les notifications sont déclarées depuis la 1.1. Tant que l'Edge Function
+      d'envoi n'est pas déployée, aucune notification ne part — mais le jeton est
+      bien collecté dès l'acceptation, donc la section reste exacte.
 -->
 <html lang="fr">
 <head>
@@ -82,7 +86,7 @@
 
 <p class="label">Be the One</p>
 <h1>Politique de confidentialité</h1>
-<p class="label date">Dernière mise à jour : 10 août 2026</p>
+<p class="label date">Dernière mise à jour : 24 août 2026</p>
 <p class="nav"><a href="#english">Read this page in English</a></p>
 
 <h2>En bref</h2>
@@ -92,10 +96,11 @@
   que vous choisissez, et vos scores. Rien d'autre.
 </p>
 <p>
-  Il n'y a ni compte, ni mot de passe, ni adresse e-mail, et aucune mesure
-  d'audience. Le jeu affiche en revanche des publicités, fournies par Google AdMob,
-  qui collectent leurs propres données — c'est décrit plus bas. Votre pseudo, votre
-  pays et vos scores ne leur sont jamais transmis, et ne sont vendus à personne.
+  Il n'y a ni compte, ni mot de passe, ni adresse e-mail. Le jeu affiche en revanche
+  des publicités, fournies par Google AdMob, et mesure d'où viennent ses
+  installations, par Tenjin. Ces deux traitements collectent leurs propres données,
+  décrites plus bas. Votre pseudo, votre pays et vos scores ne leur sont jamais
+  transmis, et ne sont vendus à personne.
 </p>
 
 <h2>Qui traite ces données</h2>
@@ -167,6 +172,42 @@
   L'achat <strong>Sans publicité</strong> les supprime définitivement.
 </p>
 
+<h2>Mesure d'audience et attribution</h2>
+<p>
+  Le jeu utilise <strong>Tenjin</strong> pour savoir d'où viennent ses
+  installations : sans cela, il est impossible de dire si une campagne publicitaire
+  sert à quelque chose. Tenjin reçoit l'identifiant publicitaire de l'appareil
+  lorsque vous l'autorisez, un identifiant d'installation, le modèle de l'appareil,
+  son adresse IP, et six événements de jeu — une partie terminée, un niveau atteint,
+  un record battu, une publicité affichée, la boutique ouverte, un achat effectué.
+</p>
+<p>
+  <strong>Ni votre pseudo, ni votre pays, ni votre empreinte d'appareil ne lui sont
+  transmis</strong> : ces événements ne portent aucun identifiant du classement, et
+  ne peuvent donc pas être rattachés à votre ligne dans le classement. Détail dans la
+  <a href="https://www.tenjin.com/privacy-policy/">politique de confidentialité de
+  Tenjin</a>.
+</p>
+<p>
+  Si vous refusez le suivi lorsque iOS vous le demande, l'identifiant publicitaire
+  n'est pas transmis. Le reste de la mesure, qui ne permet pas de vous identifier,
+  continue.
+</p>
+
+<h2>Notifications</h2>
+<p>
+  Le jeu peut vous prévenir lorsque vous <strong>perdez un palier</strong> au
+  classement — passer hors du top 10 %, par exemple. <strong>Une fois par semaine au
+  maximum</strong>, et jamais pour un simple dépassement à l'unité.
+</p>
+<p>
+  Pour cela, si vous les acceptez, un jeton de notification fourni par Apple est
+  envoyé au serveur et rattaché à votre pseudo. Il sert uniquement à vous adresser
+  ces messages. Vous pouvez couper les notifications à tout moment dans les réglages
+  iOS ; le jeton est alors inutilisable, et il est supprimé dès qu'Apple le signale
+  comme périmé. Supprimer vos données, comme décrit plus bas, le supprime aussi.
+</p>
+
 <h2>Enfants</h2>
 <p>
   Le jeu ne s'adresse pas spécifiquement aux enfants et ne collecte sciemment
@@ -206,7 +247,7 @@
 
 <p class="label" id="english">Be the One</p>
 <h1>Privacy Policy</h1>
-<p class="label date">Last updated: 10 August 2026</p>
+<p class="label date">Last updated: 24 August 2026</p>
 
 <h2>In short</h2>
 <p>
@@ -215,9 +256,10 @@
   and your scores. Nothing else.
 </p>
 <p>
-  There is no account, no password, no email address, and no analytics. The game does
-  show ads, served by Google AdMob, which collect their own data — described below.
-  Your nickname, country and scores are never passed to them, and are sold to no one.
+  There is no account, no password and no email address. The game does show ads,
+  served by Google AdMob, and it measures where its installs come from, through
+  Tenjin. Both collect their own data, described below. Your nickname, country and
+  scores are never passed to them, and are sold to no one.
 </p>
 
 <h2>Who processes this data</h2>
@@ -283,6 +325,40 @@
 </p>
 <p>
   The <strong>Remove ads</strong> purchase removes them permanently.
+</p>
+
+<h2>Analytics and attribution</h2>
+<p>
+  The game uses <strong>Tenjin</strong> to find out where its installs come from:
+  without it, there is no way to tell whether an ad campaign is worth anything.
+  Tenjin receives the device advertising identifier when you allow it, an install
+  identifier, the device model, its IP address, and six game events — a run
+  finished, a level reached, a record beaten, an ad shown, the store opened, a
+  purchase made.
+</p>
+<p>
+  <strong>Your nickname, your country and your device fingerprint are never sent to
+  it</strong>: these events carry no leaderboard identifier, and so cannot be tied
+  back to your row in the ranking. Details in
+  <a href="https://www.tenjin.com/privacy-policy/">Tenjin's privacy policy</a>.
+</p>
+<p>
+  If you decline tracking when iOS asks, the advertising identifier is not sent. The
+  rest of the measurement, which cannot identify you, continues.
+</p>
+
+<h2>Notifications</h2>
+<p>
+  The game can tell you when you <strong>lose a tier</strong> in the ranking —
+  dropping out of the top 10 %, for instance. <strong>Once a week at most</strong>,
+  and never for being overtaken by a single place.
+</p>
+<p>
+  For that, if you accept them, a notification token issued by Apple is sent to the
+  server and attached to your nickname. It is used only to deliver those messages.
+  You can turn notifications off at any time in iOS settings; the token then stops
+  working, and it is deleted as soon as Apple reports it as stale. Deleting your
+  data, as described below, deletes it too.
 </p>
 
 <h2>Children</h2>
